@@ -10,30 +10,40 @@
         font-size: 30px;
         background-color: rgb(235, 222, 107);
       }
-      p{
-        background-color:white;
+      #leyenda{
+        font-family: Georgia, 'Times New Roman', Times, serif;
       }
+      span{
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        background-color:aqua;
+        font-size:43px;
+      }
+
     </style>
   </head>
   <body>
-    <h1>Bolitas Voladoras con P5.JS</h1>
+    <h1>Programación Creativa</h1>
+    <h3>Recursos:</h3>
     <ul>
       <li><a href="https://p5js.org">Página Oficial de p5js</a></li>
        <li> <a href="https://bmoren.github.io/p5js-cheat-sheet/es.html">Chuletario básico de P5.JS</a></li>
     </ul>
-
-
     <div id="contenedor">
-      <p>
+      <h1>Bolitas Voladoras con P5.JS</h1>
+      <div id="leyenda">
+        <h2>Leyenda:</h2>
         <ul>
-          <li>Bolas: Mínimo 5 y Mäximo 100. Si se actualiza se comienza.</li>
-           <li>Velocidad: Mínimo 2 y Máximo 100</li>
+          <li><span id="numBolasSpanID">4</span> Bolas: Mínimo 4 y Máximo 100. Si se actualiza se comienza.</li>
+           <li><span id="velocidadSpanID">2</span> Velocidad: Mínimo 2 y Máximo 100</li>
           </ul>
-      </p>
-      Bolas:<input id="rangoID" type="range" min="5" max="100" onchange="totalBolitas()"><br>
+        </div>
+      <div id="rangosDIV">
+      Bolas:<input id="rangoID" type="range" min="4" max="100" onchange="totalBolitas()"><br>
       Velocidad:<input id="rangovelocidadID" type="range" min="2" max="100" onchange="totalVelocidad()">
-
+      </div>
     </div>
+
+
 
   </body>
 </html>
