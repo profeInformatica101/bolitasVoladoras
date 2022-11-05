@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
   <head>
-    <title>VolitasBoladoras con P5.JS</title>
+    <title>Bolitas Voladoras con P5.JS</title>
     <script src="https://cdn.jsdelivr.net/npm/p5@1.4.2/lib/p5.js"></script>
     <script src="sketchBolitasVoladoras.js"></script>
     <style>
@@ -13,7 +13,7 @@
     </style>
   </head>
   <body>
-    <h1>VolitasBoladoras con P5.JS</h1>
+    <h1>Bolitas Voladoras con P5.JS</h1>
     <ul>
       <li><a href="https://p5js.org">Página Oficial de p5js</a></li>
        <li> <a href="https://bmoren.github.io/p5js-cheat-sheet/es.html">Chuletario básico de P5.JS</a></li>
@@ -21,8 +21,14 @@
 
 
     <div id="contenedor">
+      <p>
+        <ul>
+          <li>Bolas: Mínimo 5 y Mäximo 100. Si se actualiza se comienza.</li>
+           <li>Velocidad: Mínimo 2 y Máximo 100</li>
+          </ul>
+      </p>
       Bolas:<input id="rangoID" type="range" min="5" max="100" onchange="totalBolitas()">
-      Velocidad:<input id="rangovelocidadID" type="range" min="5" max="100" onchange="totalVelocidad()">
+      Velocidad:<input id="rangovelocidadID" type="range" min="2" max="100" onchange="totalVelocidad()">
 
     </div>
 
